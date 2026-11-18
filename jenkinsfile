@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Welcome') {
+            steps {
+                echo 'Welcome to my first DevOps project!'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Application build started'
+                echo 'Application build completed'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Application testing completed'
+            }
+        }
+
+        stage('Success') {
+            steps {
+                echo 'Jenkins pipeline successful!'
+            }
+        }
+    }
+}
